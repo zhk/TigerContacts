@@ -1,0 +1,125 @@
+//{{NO_DEPENDENCIES}}
+// Microsoft Visual C++ generated include file.
+// Used by TigerContacts.rc
+//
+#define IDM_ABOUTBOX                    0x10
+#define IDD_ABOUTBOX                    17
+#define IDS_ABOUTBOX                    18
+#define IDD_TIGERCONTACTS_DIALOG        19
+#define IDR_MENU_DOC                    20
+#define IDB_BITMAP_CONTACT              21
+#define IDB_BITMAP_CONTACT_SMALL        22
+#define IDD_DIALOG_IMPORT_VCF           23
+#define IDD_DIALOG_EXPORT_VCF           24
+#define IDR_MAINFRAME                   128
+#define ID_INDICATOR_COUNT              129
+#define IDI_ICON_ADD                    134
+#define IDI_ICON_DELETE                 136
+#define IDD_DIALOG_PHOTO_EDIT           137
+#define IDR_MENU_PHOTO_EDIT             138
+#define IDR_WAVE_CAMERA                 139
+#define IDD_DIALOG_DONATE               141
+#define IDB_BITMAP_DONATE               142
+#define IDD_DIALOG_NAME_OP              144
+#define IDD_DIALOG_TEL_OP               145
+#define IDD_DIALOG1                     146
+#define IDD_DIALOG_IN_PROGRESS          146
+#define IDD_DIALOG_EDIT_CATEGORY        147
+#define IDC_EDIT_MAIL                   1000
+#define IDC_EDIT_QQ                     1001
+#define IDC_LIST_CONTACTS               1002
+#define IDC_EDIT_HELP                   1002
+#define IDC_BUTTON_BROWSE               1003
+#define IDC_STATIC_NAME                 1004
+#define IDC_EDIT_VCF_NAME               1005
+#define IDC_RADIO_FILE_ORIGIN           1006
+#define IDC_RADIO_FILE_ORIGIN2          1007
+#define IDC_RADIO_FILE_ORIGIN3          1008
+#define IDC_RADIO_FILE_ORIGIN4          1009
+#define IDC_STATIC_SCROLLVIEW           1010
+#define IDC_SLIDER_ZOOM                 1011
+#define IDC_SLIDER_VIEW_FINDER          1012
+#define IDC_RADIO_DONATE                1012
+#define IDC_RADIO_DONATE2               1013
+#define IDC_RADIO_NAME_OP1              1013
+#define IDC_RADIO_DONATE3               1014
+#define IDC_RADIO_NAME_OP2              1014
+#define IDC_CHECK_TEL_OP1               1014
+#define IDC_CHECK_TEL_OP2               1015
+#define IDC_RADIO_NAME_OP3              1015
+#define IDC_CHECK_TEL_OP3               1016
+#define IDC_LIST1                       1016
+#define IDC_EDIT1                       1017
+#define IDC_BUTTON1                     1018
+#define IDC_BUTTON_ADD                  1018
+#define IDC_EDIT2                       1019
+#define ID_MENU_FILE_IMPORT_SINGLE_VCF  32771
+#define ID_MENU_FILE_IMPORT_MULTI_VCF   32772
+#define ID_MENU_VIEW_MULTI              32773
+#define ID_MENU_FILE_EXPORT_SINGLE_VCF  32774
+#define ID_MENU_FILE_EXPORT_MULTI_VCF   32775
+#define ID_MENU_VIEW_PAGE               32776
+#define ID_ACTION_DELETE                32777
+#define ID_ACTION_DELETE_ALL            32778
+#define ID_ACTION_FIND                  32779
+#define ID_ACTION_ADD                   32780
+#define ID_ACTION_ADD_NEW               32781
+#define ID_MENU_DONATE                  32782
+#define ID_MENU_AUTHOR                  32783
+#define ID_MENU_HELP                    32784
+#define ID_SELECT_ALL                   32785
+#define ID_SELECT_NONE                  32786
+#define ID_SELECT_INVERSE               32787
+#define ID_SELECT_NO_PHONE              32788
+#define ID_SELECT_HAS_PHONE             32789
+#define ID_SELECT_HAS_EMAIL             32790
+#define ID_SELECT_NO_FN                 32791
+#define ID_SELECT_NO_EMAIL              32792
+#define ID_SELECT_WITH_GROUP            32793
+#define ID_ACTION_REMOVE_DUPLICATED     32794
+#define ID_SINGLE_ADD_PHONE             32795
+#define ID_SINGLE_ADD_EMAIL             32796
+#define ID_SINGLE_ADD_ADDRESS           32797
+#define ID_SINGLE_ADD_IM                32798
+#define ID_SINGLE_ADD_NICKNAME          32799
+#define ID_SINGLE_ADD_EVENT             32800
+#define ID_SINGLE_ADD_COMPANY           32801
+#define ID_SINGLE_ADD_WEBSITE           32802
+#define ID_SINGLE_ADD_NOTE              32803
+#define ID_ACTION_MERGE_SELECTION       32804
+#define ID_ACTION_EDIT_PEOPLE           32805
+#define ID_BROWSE_FIRST                 32806
+#define ID_BROWSE_PREV                  32807
+#define ID_BROWSE_NEXT                  32808
+#define ID_BROWSE_LAST                  32809
+#define ID_SINGLE_ADD_RELATS            32810
+#define ID_MENU_VIEW_ICON               32811
+#define ID_SELECT_HAS_PHOTO             32812
+#define ID_SELECT_HAS_COMPANY           32813
+#define ID_SELECT_INCREAS               32814
+#define ID_SELECT_INCREMENTAL           32815
+#define ID_ACTION_DEL_SELECTED          32816
+#define ID_MENU_HELP_USAGE              32819
+#define ID_MENU_PHOTO_UPDATE            32820
+#define ID_MENU_PHOTO_SAVE              32821
+#define ID_MENU_PHOTO_ZOOM_IN           32822
+#define ID_MENU_PHOTO_ZOOM_OUT          32823
+#define ID_MENU_PHOTO_ZOOM_NONE         32824
+#define ID_PHOTOEDIT_OPENIMAGE          32825
+#define ID_MENU_PHOTO_OPENFILE          32826
+#define ID_Menu                         32827
+#define ID_ACTION_NAME_OP_SELECTION     32828
+#define ID_ACTION_TEL_OP_SELECTION      32829
+#define ID_ACTION_AUTO_MERGE_DUPLICATED 32830
+#define ID_ACTION_EDIT_CATAGORY         32831
+
+// Next default values for new objects
+// 
+#ifdef APSTUDIO_INVOKED
+#ifndef APSTUDIO_READONLY_SYMBOLS
+#define _APS_NEXT_RESOURCE_VALUE        148
+#define _APS_NEXT_COMMAND_VALUE         32832
+#define _APS_NEXT_CONTROL_VALUE         1020
+#define _APS_NEXT_SYMED_VALUE           1110
+#endif
+#endif

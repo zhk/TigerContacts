@@ -1,0 +1,727 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\TigerContacts.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\TigerContacts.ico"
+IDI_ICON_ADD            ICON                    "res\\add.ico"
+IDI_ICON_DELETE         ICON                    "res\\delete.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        POPUP "导入联系人"
+        BEGIN
+            MENUITEM "导入单个vcf文件...",                ID_MENU_FILE_IMPORT_SINGLE_VCF
+            MENUITEM "导入目录下所有vcf文件...",             ID_MENU_FILE_IMPORT_MULTI_VCF
+        END
+        POPUP "导出联系人"
+        BEGIN
+            MENUITEM "导出到单个vcf文件...",               ID_MENU_FILE_EXPORT_SINGLE_VCF
+            MENUITEM "每个联系人导出一个vcf文件...",           ID_MENU_FILE_EXPORT_MULTI_VCF
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "列表视图",                        ID_MENU_VIEW_MULTI
+        MENUITEM "图标视图",                        ID_MENU_VIEW_ICON
+        MENUITEM "页面视图",                        ID_MENU_VIEW_PAGE
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "标记(&M)"
+    BEGIN
+        MENUITEM "全部标记\tCtrl+Shift+A",          ID_SELECT_ALL
+        MENUITEM "清除全部标记\tCtrl+Shift+C",        ID_SELECT_NONE
+        MENUITEM "反向标记",                        ID_SELECT_INVERSE
+        MENUITEM SEPARATOR
+        MENUITEM "标记没有名字的联系人",                  ID_SELECT_NO_FN
+        MENUITEM "标记有电话的联系人",                   ID_SELECT_HAS_PHONE
+        MENUITEM "标记没有电话的联系人",                  ID_SELECT_NO_PHONE
+        MENUITEM "标记有电子邮件的联系人",                 ID_SELECT_HAS_EMAIL
+        MENUITEM "标记没有电子邮件的联系人",                ID_SELECT_NO_EMAIL
+        MENUITEM "标记有头像的联系人",                   ID_SELECT_HAS_PHOTO
+        MENUITEM "标记有公司职务的联系人",                 ID_SELECT_HAS_COMPANY
+        MENUITEM SEPARATOR
+        MENUITEM "增量标记",                        ID_SELECT_INCREMENTAL
+    END
+    POPUP "操作(&A)"
+    BEGIN
+        MENUITEM "删除全部联系人",                     ID_ACTION_DELETE_ALL
+        MENUITEM "删除已标记的联系人",                   ID_ACTION_DELETE
+        MENUITEM "删除重复的联系人",                    ID_ACTION_REMOVE_DUPLICATED
+        MENUITEM "删除选中的联系人\tDel",               ID_ACTION_DEL_SELECTED
+        MENUITEM SEPARATOR
+        MENUITEM "查找联系人\tCtrl+F",               ID_ACTION_FIND
+        MENUITEM "添加联系人\tCtrl+I",               ID_ACTION_ADD_NEW
+        MENUITEM "编辑当前选中的联系人",                  ID_ACTION_EDIT_PEOPLE
+        MENUITEM "合并标记的联系人\tCtrl+M",            ID_ACTION_MERGE_SELECTION
+        MENUITEM "合并同名的联系人",                    ID_ACTION_AUTO_MERGE_DUPLICATED
+        MENUITEM SEPARATOR
+        MENUITEM "整理标记的联系人的姓名",                 ID_ACTION_NAME_OP_SELECTION
+        MENUITEM "整理标记的联系人的电话号码",               32829
+        MENUITEM SEPARATOR
+        MENUITEM "编辑标记的联系人的分组信息",               ID_ACTION_EDIT_CATAGORY
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 老虎通讯录(&A)...",             ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_DOC MENU 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        POPUP "导入"
+        BEGIN
+            MENUITEM "导入单个vcf文件...",                ID_MENU_FILE_IMPORT_SINGLE_VCF
+            MENUITEM "导入多个vcf文件...",                ID_MENU_FILE_IMPORT_MULTI_VCF
+        END
+        POPUP "导出"
+        BEGIN
+            MENUITEM "导出到单个vcf文件...",               ID_MENU_FILE_EXPORT_SINGLE_VCF
+            MENUITEM "导出为多个vcf文件...",               ID_MENU_FILE_EXPORT_MULTI_VCF
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "列表视图",                        ID_MENU_VIEW_MULTI
+        MENUITEM "图标视图",                        ID_MENU_VIEW_ICON
+        MENUITEM "页面视图",                        ID_MENU_VIEW_PAGE
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+    END
+    POPUP "浏览(&)"
+    BEGIN
+        MENUITEM "移动到最前",                       ID_BROWSE_FIRST
+        MENUITEM "上一个",                         ID_BROWSE_PREV
+        MENUITEM "下一个",                         ID_BROWSE_NEXT
+        MENUITEM "移动到最后",                       ID_BROWSE_LAST
+    END
+    POPUP "添加(&A)"
+    BEGIN
+        MENUITEM "电话",                          ID_SINGLE_ADD_PHONE
+        MENUITEM "电子邮件",                        ID_SINGLE_ADD_EMAIL
+        MENUITEM "即时信息",                        ID_SINGLE_ADD_IM
+        MENUITEM "社会关系",                        ID_SINGLE_ADD_RELATS
+        MENUITEM "网站",                          ID_SINGLE_ADD_WEBSITE
+        MENUITEM "日期",                          ID_SINGLE_ADD_EVENT
+        MENUITEM "备注",                          ID_SINGLE_ADD_NOTE
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 老虎通讯录(&A)...",             ID_APP_ABOUT
+    END
+END
+
+IDR_MENU_PHOTO_EDIT MENU 
+BEGIN
+    POPUP "PhotoEdit"
+    BEGIN
+        MENUITEM "更新头像",                        ID_MENU_PHOTO_UPDATE
+        MENUITEM "保存",                          ID_MENU_PHOTO_SAVE
+        MENUITEM "放大",                          ID_MENU_PHOTO_ZOOM_IN
+        MENUITEM "缩小",                          ID_MENU_PHOTO_ZOOM_OUT
+        MENUITEM "原始大小",                        ID_MENU_PHOTO_ZOOM_NONE
+        MENUITEM "打开文件",                        ID_MENU_PHOTO_OPENFILE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    VK_DELETE,      ID_ACTION_DEL_SELECTED, VIRTKEY, NOINVERT
+    "F",            ID_ACTION_FIND,         VIRTKEY, CONTROL, NOINVERT
+    "M",            ID_ACTION_MERGE_SELECTION, VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "A",            ID_SELECT_ALL,          VIRTKEY, SHIFT, CONTROL, NOINVERT
+    "C",            ID_SELECT_NONE,         VIRTKEY, SHIFT, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 289, 256
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 老虎通讯录"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,232,235,50,14,WS_GROUP
+    EDITTEXT        IDC_EDIT_QQ,77,39,81,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_EDIT_MAIL,77,54,81,12,ES_CENTER | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER,WS_EX_STATICEDGE
+    LTEXT           "老虎通讯录，1.51 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C)： ZHKSoft 2012",IDC_STATIC,42,26,114,8,SS_NOPREFIX
+    LTEXT           "作者：",IDC_STATIC,42,39,28,8,SS_NOPREFIX
+    LTEXT           "QQ：",IDC_STATIC,42,54,28,8,SS_NOPREFIX
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    EDITTEXT        IDC_EDIT_HELP,7,72,275,158,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | WS_VSCROLL,WS_EX_STATICEDGE
+END
+
+IDD_TIGERCONTACTS_DIALOG DIALOGEX 0, 0, 485, 331
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_VSCROLL | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES | WS_EX_APPWINDOW
+CAPTION "老虎通讯录"
+MENU IDR_MENU_DOC
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    CONTROL         "",IDC_LIST_CONTACTS,"SysListView32",LVS_REPORT | LVS_SHOWSELALWAYS | LVS_SORTASCENDING | LVS_ALIGNLEFT | WS_BORDER | WS_TABSTOP,7,7,461,317
+END
+
+IDD_DIALOG_EXPORT_VCF DIALOGEX 0, 0, 247, 115
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "请选择导出的 vcf 文件的用途"
+FONT 9, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "安卓、苹果系统",IDC_RADIO_FILE_ORIGIN,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,23,72,10
+    CONTROL         "诺基亚S60",IDC_RADIO_FILE_ORIGIN2,"Button",BS_AUTORADIOBUTTON,20,43,52,10
+    CONTROL         "用于导入Outlook、Win7联系人，解决直接导入的乱码问题",IDC_RADIO_FILE_ORIGIN3,
+                    "Button",BS_AUTORADIOBUTTON,20,63,204,10
+    DEFPUSHBUTTON   "确定",IDOK,53,94,50,14
+    PUSHBUTTON      "取消",IDCANCEL,143,94,50,14
+    GROUPBOX        "文件用途",IDC_STATIC,7,7,232,83
+    LTEXT           "请注意：Outlook导入多联系人vcf文件时，只会导入第一个联系人。",IDC_STATIC,19,77,211,8
+END
+
+IDD_DIALOG_IMPORT_VCF DIALOGEX 0, 0, 259, 170
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "导入vcf"
+FONT 9, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_EDIT_VCF_NAME,59,6,172,14,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "...",IDC_BUTTON_BROWSE,236,6,16,14
+    CONTROL         "安卓、苹果系统",IDC_RADIO_FILE_ORIGIN,"Button",BS_AUTORADIOBUTTON | WS_GROUP,24,47,72,10
+    CONTROL         "诺基亚S60",IDC_RADIO_FILE_ORIGIN2,"Button",BS_AUTORADIOBUTTON,24,69,52,10
+    CONTROL         "通过本程序导出的用于导入Outlook、Win7联系人的vcf文件",IDC_RADIO_FILE_ORIGIN3,
+                    "Button",BS_AUTORADIOBUTTON,24,91,204,10
+    CONTROL         "我不知道",IDC_RADIO_FILE_ORIGIN4,"Button",BS_AUTORADIOBUTTON,24,118,48,10
+    DEFPUSHBUTTON   "导入",IDOK,57,148,50,14
+    PUSHBUTTON      "取消",IDCANCEL,147,148,50,14
+    LTEXT           "文件名：",IDC_STATIC_NAME,8,9,34,8
+    GROUPBOX        "文件来源",IDC_STATIC,7,30,245,110
+    LTEXT           "以及Win7联系人导出的vcf文件",IDC_STATIC,34,103,165,8
+END
+
+IDD_DIALOG_PHOTO_EDIT DIALOGEX 0, 0, 409, 269
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "头像编辑"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "Static",IDC_STATIC_SCROLLVIEW,7,7,344,255
+    CONTROL         "",IDC_SLIDER_ZOOM,"msctls_trackbar32",TBS_VERT | TBS_TOP | WS_TABSTOP,369,39,19,121
+    LTEXT           "图像缩放：",IDC_STATIC,364,27,41,8
+    LTEXT           "取景框：",IDC_STATIC,366,169,33,8
+    CONTROL         "",IDC_SLIDER_VIEW_FINDER,"msctls_trackbar32",TBS_VERT | TBS_TOP | WS_TABSTOP,369,186,19,76
+END
+
+IDD_DIALOG_DONATE DIALOGEX 0, 0, 258, 139
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "捐赠"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "捐款20元",IDC_RADIO_DONATE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,108,30,48,10
+    CONTROL         "捐款50元",IDC_RADIO_DONATE2,"Button",BS_AUTORADIOBUTTON,108,51,48,10
+    CONTROL         "捐款100元",IDC_RADIO_DONATE3,"Button",BS_AUTORADIOBUTTON,108,70,52,10
+    DEFPUSHBUTTON   "我要捐赠",IDOK,132,118,50,14
+    PUSHBUTTON      "以后再说",IDCANCEL,201,118,50,14
+    CONTROL         142,IDC_STATIC,"Static",SS_BITMAP,19,24,43,39
+    LTEXT           "老虎通讯录是一款免费软件，请捐赠以支持该软件的开发。谢谢！",IDC_STATIC,7,7,244,8
+    LTEXT           "捐赠将通过淘宝商品购买方式进行，选择“我要捐赠”后将打开相应淘宝商品网页。",IDC_STATIC,7,92,244,19
+END
+
+IDD_DIALOG_NAME_OP DIALOGEX 0, 0, 302, 207
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "整理标记的联系人的名字"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "合并中间名到名",IDC_RADIO_NAME_OP1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,32,62,72,10
+    CONTROL         "合并中间名、名到姓",IDC_RADIO_NAME_OP2,"Button",BS_AUTORADIOBUTTON,32,100,88,10
+    CONTROL         "合并 姓名(N) 到 显示姓名(FN)",IDC_RADIO_NAME_OP3,"Button",BS_AUTORADIOBUTTON,32,138,118,10
+    DEFPUSHBUTTON   "OK",IDOK,180,186,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,245,186,50,14
+    LTEXT           "VCF中的名字分为5部分，包括姓、名、中间名、前缀和后缀。在安卓通讯录(4.0+)创建新联系人时候，如果输入“毛泽东”，会被自动分割为“毛”、“东”、“泽”，分别作为姓、名和中间名。这不合中国人习惯。\r\n\r\n所以本软件提供下面操作：",IDC_STATIC,7,7,288,52
+    LTEXT           "将 “泽” 合并到 “东” ，变为 “泽东”",IDC_STATIC,44,78,231,18
+    LTEXT           "将 “泽”、“东” 合并到 “毛” ，变为 “毛泽东”",IDC_STATIC,44,118,230,16
+    LTEXT           "将姓名(N)的5部分，按照：前缀+姓+中间名+名+后缀 的顺序填充到显示姓名(FN)。",IDC_STATIC,42,154,231,16
+END
+
+IDD_DIALOG_TEL_OP DIALOGEX 0, 0, 306, 207
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "整理标记的联系人的电话号码"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CONTROL         "去掉电话号码中的减号",IDC_CHECK_TEL_OP1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,67,96,10
+    CONTROL         "去掉电话号码中的空格",IDC_CHECK_TEL_OP2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,28,106,96,10
+    DEFPUSHBUTTON   "OK",IDOK,180,186,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,249,186,50,14
+    LTEXT           "将 139-1234-1234 变为 13912341234",IDC_STATIC,44,82,199,16
+    LTEXT           "某些软件生成的VCF中的电话号码会包含减号和空格，如：\r\n    139-1234-1234\r\n    139 1234 1234\r\n这些号码导入某些系统里面会出错。\r\n\r\n所以本软件提供下面操作：",IDC_STATIC,7,7,292,52
+    LTEXT           "将 139 1234 1234 变为 13912341234",IDC_STATIC,44,123,199,17
+    CONTROL         "去掉电话号码中的 +86 前缀",IDC_CHECK_TEL_OP3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,27,148,113,10
+    LTEXT           "将 +8613912341234 变为 13912341234",IDC_STATIC,44,163,199,17
+END
+
+IDD_DIALOG_IN_PROGRESS DIALOGEX 0, 0, 255, 54
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "提示"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    CTEXT           "正在处理，请稍候......",IDC_STATIC,7,21,241,8
+END
+
+IDD_DIALOG_EDIT_CATEGORY DIALOGEX 0, 0, 191, 146
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "编辑分组信息"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,38,125,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,101,125,50,14
+    LISTBOX         IDC_LIST1,7,25,177,46,LBS_OWNERDRAWFIXED | LBS_HASSTRINGS | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT1,7,7,120,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "添加",IDC_BUTTON_ADD,134,7,50,14
+    EDITTEXT        IDC_EDIT2,7,75,177,13,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "操作说明：\n    选中，将对标记的联系人增加此类属性；\n    清除，将对标记的联系人清除此属性。",IDC_STATIC,7,90,177,26
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "CompanyName", "ZHKSoft"
+            VALUE "FileDescription", "TigerContacts主程序文件"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "TigerContacts.exe"
+            VALUE "LegalCopyright", "ZHKSoft 保留所有权利。"
+            VALUE "OriginalFilename", "TigerContacts.exe"
+            VALUE "ProductName", "Tiger Contacts"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 249
+    END
+
+    IDD_TIGERCONTACTS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 468
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 324
+    END
+
+    IDD_DIALOG_EXPORT_VCF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 239
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_DIALOG_IMPORT_VCF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 162
+    END
+
+    IDD_DIALOG_PHOTO_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 402
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 262
+    END
+
+    IDD_DIALOG_DONATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 132
+    END
+
+    IDD_DIALOG_NAME_OP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_DIALOG_TEL_OP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 299
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_DIALOG_IN_PROGRESS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 248
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 47
+    END
+
+    IDD_DIALOG_EDIT_CATEGORY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_CONTACT      BITMAP                  "res\\contact.bmp"
+IDB_BITMAP_CONTACT_SMALL BITMAP                  "res\\contact_small.bmp"
+IDB_BITMAP_DONATE       BITMAP                  "res\\donate.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// WAVE
+//
+
+IDR_WAVE_CAMERA         WAVE                    "res\\camera.wav"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "老虎通讯录\n\n老虎通讯录\nVCF Files (*.vcf)\n.vcf\nTigerContacts.Document\nTigerContacts.Document"
+    ID_INDICATOR_COUNT      "联系人数量：0     "
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "TigerContacts"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "清除选定内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制选定内容并将其放到剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切选定内容并将其放到剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "恢复上次撤消的操作\n重做"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小为图标"
+    AFX_IDS_SCMAXIMIZE      "使窗口最大化显示"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到前一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "Count"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_MENU_FILE_IMPORT_SINGLE_VCF "导入一个vcf文件\n导入一个文件"
+    ID_MENU_FILE_IMPORT_MULTI_VCF "导入目录下所有vcf文件\n导入多个文件"
+    ID_MENU_VIEW_MULTI      "切换到列表视图\n切换到列表视图"
+    ID_MENU_FILE_EXPORT_SINGLE_VCF "导出到单个vcf文件\n导出到单个文件"
+    ID_MENU_FILE_EXPORT_MULTI_VCF "每个联系人导出一个vcf文件\n分个导出"
+    ID_MENU_VIEW_PAGE       "切换到页面视图\n切换到页面视图"
+    ID_ACTION_DELETE        "删除已标记的联系人\n删除已标记的联系人"
+    ID_ACTION_DELETE_ALL    "删除全部联系人\n删除全部联系人"
+    ID_ACTION_FIND          "查找联系人\n查找联系人"
+    ID_ACTION_ADD_NEW       "添加联系人\n添加联系人"
+    ID_MENU_DONATE          "捐赠\n捐赠"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SELECT_ALL           "标记全部联系人\n全部标记"
+    ID_SELECT_NONE          "清除全部标记\n清除全部标记"
+    ID_SELECT_INVERSE       "反向标记联系人\n反向标记"
+    ID_SELECT_NO_PHONE      "标记没有电话的联系人\n标记没有电话的联系人"
+    ID_SELECT_HAS_PHONE     "标记有电话的联系人\n标记有电话的联系人"
+    ID_SELECT_HAS_EMAIL     "标记没有电话的联系人\n标记没有电话的联系人"
+    ID_SELECT_NO_FN         "标记没有名字的联系人\n标记没有名字的联系人"
+    ID_SELECT_NO_EMAIL      "标记没有电子邮件的联系人\n标记没有电子邮件的联系人"
+    ID_ACTION_REMOVE_DUPLICATED "删除重复的联系人\n删除重复的联系人"
+    ID_SINGLE_ADD_PHONE     "添加电话\n添加电话"
+    ID_SINGLE_ADD_EMAIL     "添加电子邮件\n添加电子邮件"
+    ID_SINGLE_ADD_IM        "添加即时信息\n添加即时信息"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_SINGLE_ADD_EVENT     "添加日期\n添加日期"
+    ID_SINGLE_ADD_WEBSITE   "添加网站\n添加网站 "
+    ID_SINGLE_ADD_NOTE      "添加备注\n添加备注"
+    ID_ACTION_MERGE_SELECTION "合并标记的联系人\n合并标记的联系人"
+    ID_ACTION_EDIT_PEOPLE   "编辑当前选中的联系人\n编辑当前选中的联系人"
+    ID_SINGLE_ADD_RELATS    "添加社会关系\n添加社会关系"
+    ID_MENU_VIEW_ICON       "切换到图标视图\n切换到图标视图"
+    ID_SELECT_HAS_PHOTO     "标记有头像的联系人\n标记有头像的联系人"
+    ID_SELECT_HAS_COMPANY   "标记有公司职务的联系人\n标记有公司职务的联系人"
+    ID_SELECT_INCREMENTAL   "打开关闭增量标记\n切换增量标记"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_ACTION_DEL_SELECTED  "删除选中的联系人\n删除选中的联系人"
+    32819                   "使用说明\n使用说明"
+    ID_MENU_PHOTO_UPDATE    "更新头像\n更新头像"
+    ID_MENU_PHOTO_SAVE      "保存头像到磁盘\n保存到磁盘"
+    ID_MENU_PHOTO_ZOOM_IN   "放大\n放大"
+    ID_MENU_PHOTO_ZOOM_OUT  "缩小\n缩小"
+    ID_MENU_PHOTO_ZOOM_NONE "原始大小\n原始大小"
+    ID_MENU_PHOTO_OPENFILE  "打开文件\n打开文件"
+    ID_ACTION_NAME_OP_SELECTION "整理标记的联系人的姓名\n整理姓名"
+    ID_ACTION_TEL_OP_SELECTION "整理标记的联系人的电话号码\n整理电话号码"
+    ID_ACTION_AUTO_MERGE_DUPLICATED "合并同名的联系人\n合并同名的联系人"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\TigerContacts.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
