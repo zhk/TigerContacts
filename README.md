@@ -53,6 +53,6 @@ A VCF editor on Windows using MFC/C++.
 	生活、twelve、云
 
 五、联系方式
-	作者：张昆(zhk_tiger)
+	作者：zhk_tiger
 	QQ：931076774
 	eMail：931076774@qq.com
